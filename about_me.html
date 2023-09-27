@@ -3,6 +3,8 @@
     <head>
         <title>About me</title>
         <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/2dc05c0136.js" crossorigin="anonymous"></script>
+
 
     </head>
     <body>
@@ -50,13 +52,43 @@
 
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Log In</a>
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#LogInModal">Log In</a>
                 </li>
               </ul>
 
             </div>
           </div>
         </nav>
+
+                  <!-- Modal -->
+          <div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="LogInModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="LogInModalLabel"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;Log In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-outline-info btn-block btn-sm"><i class="fa-brands fa-google"></i>&nbsp;&nbsp;Log In with Google</button>
+                            <button type="button" class="btn btn-outline-info btn-block btn-sm"><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;Log In with E-mail</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-outline-info btn-block btn-sm"><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;Sign up with E-mail</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+          </div>
 
         <div class="container">
           <div class="row my-3">
